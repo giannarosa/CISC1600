@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main ()
+{
+
+        int a;
+        double result1;
+        double b;
+        string x;
+        double result2;
+
+        a = 3;
+        b = 0.14;
+        result1 = a + b;
+        result2 = a - b;
+
+        cout << "Please enter your name: ";
+        getline(cin, x);
+        cout << "Hello " << x << ", I've calculated that " << a << " + " << b << " = " << result1 << ", and " << a << " - " << b << " = " << result2 << "." << endl;
+"Hw3.cc" 24L, 501C                                                             
