@@ -1,0 +1,33 @@
+
+//Assignment 5 - combining loops and conditions
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+
+int number;
+cout<<"Guess the number: "<< endl;
+cin >> number;
+while (number!=5)
+{
+if(number > 5)
+{
+        cout <<"Oops! Too large! Guess again: " << endl;
+        cin >> number;
+}
+if (number < 5)
+{
+        cout <<"Oops! Too small! Guess again: " << endl;
+        cin >> number;
+}
+}
+
+if (number==5);
+{
+        cout<<"Bingo! The number you guessed is correct." <<endl;
+}
+
+return 0;
+}
