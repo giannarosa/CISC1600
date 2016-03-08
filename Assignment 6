@@ -1,0 +1,65 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int add(int x, int y)
+{
+ return x+y;
+}
+
+int sub(int x, int y)
+{
+ return x-y;
+}
+
+int factorial(int x)
+{
+        int ret = 1;
+        while(x>1)
+        {
+         ret = ret * x;
+         x--;
+        }
+        return ret;
+}
+
+int main ()
+{
+        int a = 0;
+        int b = 0;
+        cout << "Please input a value for a:";
+        cin >> a;
+        cout << "Now input a value for b:";
+        cin >> b;
+
+        int operation = 1;
+        while( operation != 0)
+{
+        cout << "Choose one:" << endl;
+        cout << "1) Calculate a+b" << endl;
+        cout << "2) Calculate a-b" << endl;
+        cout << "3) Calculate a!" << endl;
+        cout << "4) Exit program" << endl;
+        cin >> operation;
+       int output;
+        if (operation == 1)
+        {
+        output = add(a,b);
+        }
+        else if(operation == 2)
+        {
+        output = sub(a,b);
+        }
+        else if(operation == 3)
+        {
+        output = factorial(a);
+        }
+        else
+        {
+        break;
+        }
+        cout << "The answer to this  operation is: "<<  output << endl;
+}
+return 0;
+}
+ 
